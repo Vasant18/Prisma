@@ -1,7 +1,7 @@
 # Prisma Handson
 
 ## Project Description
-Prisma Handson is a practice and hands-on repository to understand and explore Prisma ORM, TypeScript, and PostgreSQL. This project provides examples and exercises to deepen your understanding of database interactions and schema management using Prisma.
+Prisma Handson is a practice and hands-on repository designed to help developers understand and explore Prisma ORM, TypeScript, and PostgreSQL. This project provides examples and exercises to deepen your understanding of database interactions and schema management using Prisma.
 
 ---
 
@@ -17,7 +17,7 @@ Prisma Handson is a practice and hands-on repository to understand and explore P
 ### Prerequisites
 Ensure you have the following installed on your system:
 - **Node.js** (v16 or higher)
-- **pnpm**
+- **npm**
 - **PostgreSQL** (with a running instance and proper user permissions)
 
 ### Steps
@@ -29,7 +29,7 @@ Ensure you have the following installed on your system:
 
 2. Install dependencies:
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. Set up your environment variables:
@@ -41,12 +41,12 @@ Ensure you have the following installed on your system:
 
 4. Generate Prisma client:
    ```bash
-   pnpm prisma generate
+   npx prisma generate
    ```
 
 5. Apply migrations to set up the database:
    ```bash
-   pnpm prisma migrate dev --name init
+   npx prisma migrate dev --name init
    ```
 
 ---
@@ -56,7 +56,7 @@ Ensure you have the following installed on your system:
 ### Running the Project
 1. Start the development server:
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
 2. Open your browser or API testing tool to interact with the application.
@@ -64,15 +64,15 @@ Ensure you have the following installed on your system:
 ### Prisma Commands
 - Open the Prisma Studio:
   ```bash
-  pnpm prisma studio
+  npx prisma studio
   ```
 - Run database migrations:
   ```bash
-  pnpm prisma migrate dev --name <migration-name>
+  npx prisma migrate dev --name <migration-name>
   ```
 - Reset the database:
   ```bash
-  pnpm prisma migrate reset
+  npx prisma migrate reset
   ```
 
 ---
